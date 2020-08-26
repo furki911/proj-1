@@ -51,5 +51,9 @@
       @media only screen and (max-width: $bp-larger) {
          padding: 5rem 10rem;
       }
+
+      @media only screen and (max-width: $bp-medium) {
+         padding: 5rem;
+      }
    }
 }

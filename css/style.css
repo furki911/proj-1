@@ -606,7 +606,10 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.5s;
-  z-index: 10; }
+  z-index: 100; }
+  @media only screen and (max-width: 43.75em) {
+    .lightbox {
+      padding-top: 10rem; } }
 
 /* .preload will be removed by JS code during DOMContentLoaded event. This is done to avoid lightbox transition appearing on page load. */
 .lightbox.preload {
@@ -625,6 +628,9 @@ body {
   max-height: 90%;
   padding: 1rem;
   position: relative; }
+  @media only screen and (max-width: 43.75em) {
+    .lightbox .lb-content {
+      flex-direction: row; } }
 
 .lightbox .lb-img {
   -o-object-fit: contain;
@@ -633,6 +639,15 @@ body {
   display: block;
   width: 100%;
   height: auto; }
+  @media only screen and (max-height: 33.125em) {
+    .lightbox .lb-img {
+      display: none; } }
+  @media only screen and (max-width: 43.75em) {
+    .lightbox .lb-img {
+      transform: scale(0.75); } }
+  @media only screen and (max-width: 31.25em) {
+    .lightbox .lb-img {
+      display: none; } }
 
 .project__location, .project__post {
   margin: 1rem 0;
@@ -814,6 +829,9 @@ h6 {
   padding: 1rem 10rem;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 43.75em) {
+    .header-top {
+      display: none; } }
   .header-top .fa {
     color: #fff;
     font-size: 2rem;
@@ -845,24 +863,40 @@ h6 {
     display: inline-block;
     margin-left: 1rem; }
 
-.none {
-  display: none; }
-
 .menubar {
   width: 100%;
   background: #fff;
   position: sticky;
   top: -1%;
   z-index: 999; }
+  @media only screen and (max-width: 43.75em) {
+    .menubar__logo {
+      margin: 2rem 0; } }
   .menubar .container {
     display: flex;
     justify-content: space-between;
     padding: 2.5rem 10rem;
     max-width: 140rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    align-items: center; }
+    @media only screen and (max-width: 43.75em) {
+      .menubar .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
   .menubar__ul {
     display: flex;
     list-style: none; }
+    @media only screen and (max-width: 43.75em) {
+      .menubar__ul {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: baseline;
+        display: none; } }
+  @media only screen and (max-width: 43.75em) {
+    .menubar__list-item {
+      align-self: flex-end;
+      width: 100%; } }
   .menubar__list-item a, .menubar__list-item .fa {
     color: #5f5f5f;
     text-decoration: none;
@@ -870,12 +904,25 @@ h6 {
     font-weight: 300; }
     .menubar__list-item a:hover, .menubar__list-item a:hover .fa, .menubar__list-item .fa:hover, .menubar__list-item .fa:hover .fa {
       color: #5e697e; }
+  .menubar__list-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem; }
   .menubar__list-item .fa {
     font-size: 2.4rem;
     margin-right: .5rem;
     transform: translateY(2px); }
+    @media only screen and (max-width: 43.75em) {
+      .menubar__list-item .fa {
+        margin-right: 2rem;
+        font-size: 4rem; } }
   .menubar__list-item:not(:last-child) {
     margin-right: 2rem; }
+    @media only screen and (max-width: 43.75em) {
+      .menubar__list-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1.5rem; } }
   .menubar__list-item--current a .fa {
     color: #5e697e; }
 
@@ -896,6 +943,9 @@ h6 {
   border-radius: 100px;
   width: 80%;
   display: none; }
+  @media only screen and (max-width: 43.75em) {
+    .hamburger {
+      display: block; } }
   .hamburger::before, .hamburger::after {
     content: '';
     width: 100%;
@@ -909,14 +959,17 @@ h6 {
   .hamburger::after {
     transform: translateY(-0.4rem); }
 
-.hamburger__container:hover .hamburger {
+.hamburger__container.clicked .hamburger {
   background-color: transparent; }
 
-.hamburger__container:hover .hamburger::before {
+.hamburger__container.clicked .hamburger::before {
   transform: rotate(45deg) translateY(0); }
 
-.hamburger__container:hover .hamburger::after {
+.hamburger__container.clicked .hamburger::after {
   transform: rotate(-45deg) translate(1rem, -1rem); }
+
+.block {
+  display: block; }
 
 .about {
   padding: 10rem 0; }
@@ -958,6 +1011,9 @@ h6 {
     @media only screen and (max-width: 56.25em) {
       .about__description {
         padding: 5rem 10rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .about__description {
+        padding: 5rem; } }
 
 .carousel__container {
   flex-basis: 60%;
@@ -1002,6 +1058,10 @@ h6 {
       .feedback__carousel {
         width: 80%;
         height: 100%; } }
+    @media only screen and (max-width: 43.75em) {
+      .feedback__carousel {
+        width: 80%;
+        height: 30rem; } }
   .feedback .card {
     position: absolute;
     top: 0;
@@ -1018,6 +1078,9 @@ h6 {
     width: 100%;
     height: 36rem;
     overflow: hidden; }
+    @media only screen and (max-width: 31.25em) {
+      .feedback .image {
+        height: 30rem; } }
   .feedback .image img {
     width: 100%;
     height: 100%;
@@ -1094,8 +1157,14 @@ h6 {
         flex-basis: 50%; } }
     @media only screen and (max-width: 56.25em) {
       .feedback__form {
-        margin-top: 70%;
+        margin-top: 60%;
         padding: 8rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .feedback__form {
+        margin-top: 40%; } }
+    @media only screen and (max-width: 31.25em) {
+      .feedback__form {
+        padding: 8rem 0; } }
     .feedback__form-heading {
       margin-bottom: 5rem;
       color: #00d6c8; }
@@ -1143,6 +1212,10 @@ h6 {
   font-size: 1.6rem;
   font-weight: 600;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 31.25em) {
+    .footer {
+      flex-direction: column;
+      align-items: center; } }
   .footer > * {
     flex-basis: 25%;
     min-width: 20rem;
@@ -1161,6 +1234,9 @@ h6 {
     color: #8286bd; }
   .footer .quicklinks__header {
     margin-bottom: 2rem; }
+  @media only screen and (max-width: 31.25em) {
+    .footer__quick-links {
+      text-align: center; } }
   .footer__quick-links ul {
     list-style: none;
     display: flex;
@@ -1169,6 +1245,9 @@ h6 {
       margin: .75rem; }
       .footer__quick-links ul li a {
         cursor: pointer; }
+  @media only screen and (max-width: 31.25em) {
+    .footer__address, .footer__contact {
+      text-align: center; } }
   .footer__address p, .footer__contact p {
     margin-bottom: .75rem; }
   .footer__social .fa {

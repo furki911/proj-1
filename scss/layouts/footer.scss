@@ -6,6 +6,11 @@
    font-weight: 600;
    flex-wrap: wrap;
 
+   @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: center;
+   }
+
    & > * {
       flex-basis: 25%;
       min-width: 20rem;
@@ -37,10 +42,15 @@
 
    &__quick-links {
       
+      @media only screen and (max-width: $bp-medium) {
+         text-align: center;
+      }
+      
       ul {
          list-style: none;
          display: flex;
          flex-direction: column;
+         // align-items: center;
 
          li {
             margin: .75rem;
@@ -53,6 +63,9 @@
    }
 
    &__address, &__contact {
+      @media only screen and (max-width: $bp-medium) {
+         text-align: center;
+      }
       p {
          margin-bottom: .75rem;
       }

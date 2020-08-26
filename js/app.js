@@ -14,3 +14,10 @@ function hideDiv() {
       return rotate();
    });
 }).call(this);
+
+function cta() {
+   const ul = document.querySelector('.menubar__ul');
+   const hamburgerContainer = document.querySelector('.hamburger__container');
+   ul.classList.toggle('block');
+   const children = hamburgerContainer.classList.toggle('clicked');
+}

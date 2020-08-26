@@ -76,7 +76,12 @@
    opacity: 0;
    pointer-events: none;
    transition: opacity 0.5s;
-   z-index: 10;
+   z-index: 100;
+
+   
+   @media only screen and (max-width: $bp-large) {
+      padding-top: 10rem;
+   }
 }
 
 /* .preload will be removed by JS code during DOMContentLoaded event. This is done to avoid lightbox transition appearing on page load. */
@@ -98,6 +103,10 @@
    max-height: 90%;
    padding: 1rem;
    position: relative;
+ 
+   @media only screen and (max-width: $bp-large) {
+      flex-direction: row;
+   }
 }
 
 .lightbox .lb-img {
@@ -107,6 +116,18 @@
    display: block;
    width: 100%;
    height: auto;
+
+   @media only screen and (max-height: 33.125em) {
+      display: none;
+   }
+   
+   @media only screen and (max-width: $bp-large) {
+      transform: scale(.75);
+   }
+
+   @media only screen and (max-width: $bp-medium) {
+      display: none;
+   }
 }
 
 .project__location, .project__post {
