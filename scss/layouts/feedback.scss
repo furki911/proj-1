@@ -16,6 +16,15 @@
    background: #0a1124;
    padding-bottom: 5rem;
 
+   @media only screen and (max-width: $bp-larger) {
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   @media only screen and (max-width: $bp-larger) {
+      padding-bottom: 0;
+   }
+
    &__heading {
       background: #0a1124;
       text-align: center;
@@ -31,13 +40,18 @@
          height: 1rem;
          background-color: $color-secondary-2;
          margin: 2rem auto;
-         }
+      }
    }
 
    &__carousel {
       position: relative;
       width: 60rem;
       height: 50rem;
+
+      @media only screen and (max-width: $bp-largest) {
+         width: 80%;
+         height: 100%;
+      }
    }
 
    .card {
@@ -157,6 +171,15 @@
       justify-content: center;
       align-items: center;
       padding: 2rem 1rem;
+
+      @media only screen and (max-width: $bp-largest) {
+         flex-basis: 50%;
+      }
+
+      @media only screen and (max-width: $bp-larger) {
+         margin-top: 70%;
+         padding: 8rem;
+      }
 
       &-heading {
          margin-bottom: 5rem;

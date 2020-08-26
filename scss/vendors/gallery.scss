@@ -245,6 +245,10 @@
    padding: 4rem 6rem;
    padding-bottom: 8rem;
 
+   @media only screen and (max-width: $bp-larger) {
+      padding: 4rem;
+   }
+
    &__item {
 
       &--1 {

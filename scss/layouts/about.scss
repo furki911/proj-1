@@ -23,6 +23,10 @@
       flex-wrap: wrap;
       align-items: center;
       margin: 5rem 0;
+
+      @media only screen and (max-width: $bp-larger) {
+         flex-direction: column;
+      }
    }
 
    &__image {
@@ -31,6 +35,9 @@
       img {
          width: 100%;
          object-fit: contain;
+         @media only screen and (max-width: $bp-larger) {
+            border-radius: 50%;
+         }
       }
    }
 
@@ -40,5 +47,9 @@
       line-height: 1.3;
       font-weight: 300;
       padding: 0 3rem;
+
+      @media only screen and (max-width: $bp-larger) {
+         padding: 5rem 10rem;
+      }
    }
 }
