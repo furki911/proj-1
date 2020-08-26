@@ -23,8 +23,8 @@ html {
 
 .fnc {
   /* you can add color names and their values here
-   and then simply add classes like .m--blend-$colorName to .fnc-slide 
-   to apply specific color for mask blend mode */ }
+  and then simply add classes like .m--blend-$colorName to .fnc-slide 
+  to apply specific color for mask blend mode */ }
   .fnc-slider {
     overflow: hidden;
     box-sizing: border-box;
@@ -35,7 +35,7 @@ html {
     .fnc-slider__slides {
       position: relative;
       height: 100%;
-      transition: transform 1s 0.66667s; }
+      transition: transform 1s 0.6666666667s; }
     .fnc-slider .m--blend-dark .fnc-slide__inner {
       background-color: #8a8a8a; }
     .fnc-slider .m--blend-dark .fnc-slide__mask-inner {
@@ -73,7 +73,7 @@ html {
       transform: translate3d(100%, 0, 0); }
     .fnc-slide.m--active-slide {
       z-index: 1;
-      transition: transform 1s 0.66667s ease-in-out;
+      transition: transform 1s 0.6666666667s ease-in-out;
       transform: translate3d(0, 0, 0); }
     .fnc-slide__inner {
       position: relative;
@@ -81,13 +81,12 @@ html {
       background-size: cover;
       background-position: center top;
       transform: translate3d(0, 0, 0); }
-      .m--global-blending-active .fnc-slide__inner,
-      .m--blend-bg-active .fnc-slide__inner {
+      .m--global-blending-active .fnc-slide__inner, .m--blend-bg-active .fnc-slide__inner {
         background-blend-mode: luminosity; }
       .m--before-sliding .fnc-slide__inner {
         transform: translate3d(-100%, 0, 0); }
       .m--active-slide .fnc-slide__inner {
-        transition: transform 1s 0.66667s ease-in-out;
+        transition: transform 1s 0.6666666667s ease-in-out;
         transform: translate3d(0, 0, 0); }
     .fnc-slide__mask {
       overflow: hidden;
@@ -105,11 +104,11 @@ html {
         transform: rotate(-10deg) translate3d(200px, 0, 0);
         opacity: 0; }
       .m--active-slide .fnc-slide__mask {
-        transition: transform 0.7s 1.22222s, opacity 0.35s 1.22222s;
+        transition: transform 0.7s 1.2222222222s, opacity 0.35s 1.2222222222s;
         transform: translate3d(0, 0, 0);
         opacity: 1; }
       .m--previous-slide .fnc-slide__mask {
-        transition: transform 0.7s 0.33333s, opacity 0.35s 0.68333s;
+        transition: transform 0.7s 0.3333333333s, opacity 0.35s 0.6833333333s;
         transform: rotate(10deg) translate3d(-200px, 0, 0);
         opacity: 0; }
       .fnc-slide__mask-inner {
@@ -129,10 +128,10 @@ html {
         .m--before-sliding .fnc-slide__mask-inner {
           transform: translateY(0) rotate(10deg) translateX(-200px) translateZ(0); }
         .m--active-slide .fnc-slide__mask-inner {
-          transition: transform 0.7s 1.22222s;
+          transition: transform 0.7s 1.2222222222s;
           transform: translateX(0); }
         .m--previous-slide .fnc-slide__mask-inner {
-          transition: transform 0.7s 0.33333s;
+          transition: transform 0.7s 0.3333333333s;
           transform: translateY(0) rotate(-10deg) translateX(200px) translateZ(0); }
     .fnc-slide__content {
       z-index: 2;
@@ -246,7 +245,7 @@ html {
         transform: translateX(100%); }
       .fnc-nav__bg.m--active-nav-bg {
         z-index: 1;
-        transition: transform 1s 0.66667s;
+        transition: transform 1s 0.6666666667s;
         transform: translateX(0); }
     .fnc-nav__controls {
       font-size: 0; }
@@ -317,7 +316,7 @@ body {
     transform: translate3d(100%, 0, 0) rotateY(-45deg);
     will-change: transform; }
     .credits-active .demo-cont__credits {
-      transition: transform 0.7s 0.23333s;
+      transition: transform 0.7s 0.2333333333s;
       transform: translate3d(0, 0, 0); }
     .demo-cont__credits *, .demo-cont__credits *:before, .demo-cont__credits *:after {
       box-sizing: border-box; }
@@ -402,13 +401,13 @@ body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 /* COLORFUL SWITCH STYLES 
-    ORIGINAL DEMO - https://codepen.io/suez/pen/WQjwOb */
+   ORIGINAL DEMO - https://codepen.io/suez/pen/WQjwOb */
 .colorful-switch {
   position: relative;
   width: 180px;
-  height: 77.14286px;
+  height: 77.1428571429px;
   margin: 0 auto;
-  border-radius: 32.14286px;
+  border-radius: 32.1428571429px;
   background: #cfcfcf; }
   .colorful-switch:before {
     content: "";
@@ -417,8 +416,8 @@ body {
     left: -5px;
     top: -5px;
     width: 190px;
-    height: 87.14286px;
-    border-radius: 37.14286px;
+    height: 87.1428571429px;
+    border-radius: 37.1428571429px;
     background: #314239;
     transition: background-color 0.3s; }
   .colorful-switch:hover:before {
@@ -437,7 +436,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 32.14286px;
+    border-radius: 32.1428571429px;
     cursor: pointer; }
   .colorful-switch__bg {
     position: absolute;
@@ -452,28 +451,28 @@ body {
       transform: translate3d(0, 0, 0); }
   .colorful-switch__dot {
     position: absolute;
-    left: 131.14286px;
+    left: 131.1428571429px;
     top: 50%;
-    width: 5.14286px;
-    height: 5.14286px;
-    margin-left: -2.57143px;
-    margin-top: -2.57143px;
+    width: 5.1428571429px;
+    height: 5.1428571429px;
+    margin-left: -2.5714285714px;
+    margin-top: -2.5714285714px;
     border-radius: 50%;
     background: #fff;
     transition: transform 0.5s;
     transform: translate3d(0, 0, 0); }
     .colorful-switch__checkbox:checked ~ .colorful-switch__label .colorful-switch__dot {
-      transform: translate3d(-80.35714px, 0, 0); }
+      transform: translate3d(-80.3571428571px, 0, 0); }
   .colorful-switch__on {
     position: absolute;
-    left: 104.14286px;
+    left: 104.1428571429px;
     top: 22.5px;
-    width: 19.28571px;
+    width: 19.2857142857px;
     height: 36px;
     transition: transform 0.5s;
     transform: translate3d(0, 0, 0); }
     .colorful-switch__checkbox:checked ~ .colorful-switch__label .colorful-switch__on {
-      transform: translate3d(-80.35714px, 0, 0); }
+      transform: translate3d(-80.3571428571px, 0, 0); }
     .colorful-switch__on__inner {
       position: absolute;
       width: 100%;
@@ -487,39 +486,39 @@ body {
       .colorful-switch__on__inner:before, .colorful-switch__on__inner:after {
         content: "";
         position: absolute;
-        border-radius: 2.57143px;
+        border-radius: 2.5714285714px;
         background: #fff; }
       .colorful-switch__on__inner:before {
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 6.14286px; }
+        height: 6.1428571429px; }
       .colorful-switch__on__inner:after {
         right: 0;
         top: 0;
-        width: 6.14286px;
+        width: 6.1428571429px;
         height: 80%; }
   .colorful-switch__off {
     position: absolute;
-    left: 131.14286px;
+    left: 131.1428571429px;
     top: 50%;
-    width: 41.14286px;
-    height: 41.14286px;
-    margin-left: -20.57143px;
-    margin-top: -20.57143px;
+    width: 41.1428571429px;
+    height: 41.1428571429px;
+    margin-left: -20.5714285714px;
+    margin-top: -20.5714285714px;
     transition: transform 0.5s;
     transform: translate3d(0, 0, 0); }
     .colorful-switch__checkbox:checked ~ .colorful-switch__label .colorful-switch__off {
-      transform: translate3d(-80.35714px, 0, 0); }
+      transform: translate3d(-80.3571428571px, 0, 0); }
     .colorful-switch__off:before, .colorful-switch__off:after {
       content: "";
       position: absolute;
       left: 0;
       top: 50%;
       width: 100%;
-      height: 5.14286px;
-      margin-top: -2.57143px;
-      border-radius: 2.57143px;
+      height: 5.1428571429px;
+      margin-top: -2.5714285714px;
+      border-radius: 2.5714285714px;
       background: #fff;
       transition: transform 0.25s 0.25s; }
       .colorful-switch__checkbox:checked ~ .colorful-switch__label .colorful-switch__off:before, .colorful-switch__checkbox:checked ~ .colorful-switch__label .colorful-switch__off:after {
@@ -717,22 +716,25 @@ body {
 @media screen and (min-width: 768px) {
   .slider__container {
     max-width: 720px; }
+
   .lightbox .lb-caption {
     font-size: 1rem; } }
-
 /* Large devices (laptops/desktops, 1024px and up) */
 @media screen and (min-width: 1024px) {
   .slider__container {
     max-width: 960px; }
+
   .lightbox .lb-content {
     flex-direction: row; }
+
   .lightbox .lb-img {
     margin-bottom: 0; }
+
   .lightbox .lb-caption {
     padding: 0 1.5em; }
+
   .lightbox .lb-url {
     padding-top: 0; } }
-
 .gallery__heading {
   text-align: center;
   margin: 2rem 0;
@@ -961,15 +963,16 @@ h6 {
 
 .hamburger__container.clicked .hamburger {
   background-color: transparent; }
-
 .hamburger__container.clicked .hamburger::before {
   transform: rotate(45deg) translateY(0); }
-
 .hamburger__container.clicked .hamburger::after {
   transform: rotate(-45deg) translate(1rem, -1rem); }
 
 .block {
   display: block; }
+
+.none {
+  display: none; }
 
 .about {
   padding: 10rem 0; }
@@ -1263,3 +1266,5 @@ h6 {
     .footer__social .fa:hover {
       color: #8286bd;
       transform: scale(1.25); }
+
+/*# sourceMappingURL=style.css.map */
