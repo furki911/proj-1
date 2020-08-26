@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.carousel__container {
+   flex-basis: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #0a1124;
+   font-family: 'Poppins', sans-serif;
+   color: #1f1f1f;
+   padding: 5rem 0;
+}
+
+.feedback {
+   display: flex;
+   background: #0a1124;
+   padding-bottom: 5rem;
+
+   &__heading {
+      background: #0a1124;
+      text-align: center;
+      color: #fff;
+      padding: 8rem 0;
+      padding-bottom: 4rem;
+
+      &::after {
+         content: '';
+         display: block;
+         width: 10%;
+         border-radius: 100px;
+         height: 1rem;
+         background-color: $color-secondary-2;
+         margin: 2rem auto;
+         }
+   }
+
+   &__carousel {
+      position: relative;
+      width: 60rem;
+      height: 50rem;
+   }
+
+   .card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #FFFFFF;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transform-origin: center;
+      transition: 0.4s cubic-bezier(.28, .55, .385, 1.65);
+      font-size: 1.2rem;
+      overflow: hidden;
+      backface-visibility: hidden;
+   }
+
+   .image {
+      width: 100%;
+      height: 36rem;
+      overflow: hidden;
+   } 
+
+   .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+
+   .detail {
+      padding: 1.5rem 2rem;
+      position: relative;
+   }
+
+   .detail h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+   }
+
+   .detail i {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #0a1124;
+   }
+
+   .detail p {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #868686;
+      margin: 0;
+   }
+
+   .next {
+      position: absolute;
+      top: 50%;
+      right: 4%;
+      font-size: 2rem;
+      cursor: pointer;
+   }
+
+   .next i {
+      background-color: #fc686d;
+      height: 4rem;
+      width: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border-radius: 50%;
+   }
+
+   .card:nth-child(1) {
+      z-index: 10;
+      top: 0px;
+      transform-origin: top;
+      transform: scale(1);
+      opacity: 1;
+   }
+
+   .card:nth-child(2) {
+      z-index: 9;
+      top: -15px;
+      transform-origin: top;
+      transform: scale(.9);
+      opacity: 0.9;
+   }
+
+   .card:nth-child(3) {
+      z-index: 8;
+      top: -30px;
+      transform-origin: top;
+      transform: scale(.8);
+      opacity: 0.8;
+   }
+
+   .card:nth-child(4) {
+      z-index: 7;
+      top: -45px;
+      transform-origin: top;
+      transform: scale(.7);
+      opacity: 0.7;
+   }
+
+   .card:first-child:hover {
+      box-shadow: 0 0 2rem rgba(0, 0, 0 , 0.4);
+      transform: scale(1.05);
+   }
+
+   .card:last-child {
+      opacity: 0;
+   }
+
+   &__form {
+      flex-basis: 40%;
+      background: #283048;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+
+      &-heading {
+         margin-bottom: 5rem;
+         color: $color-secondary-2;
+      }
+
+      
+      &-group {
+         width: 80%;
+         &:not(:last-child) {
+            margin-bottom: 2rem;
+         }
+         
+         input, textarea {
+            width: 100%;
+            padding: 1.50rem 2rem;
+            border-radius: 100px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            font-family: inherit;
+            color: #fff;
+            transition: all .2s;
+            cursor: default;
+            
+            &::placeholder {
+               color: #fff;
+               font-family: cursive;
+            }
+
+            &:focus, 
+            &:active,
+            &:hover {
+               outline: none;
+               border: 1px solid $color-secondary-2;
+            }
+         }
+
+         textarea {
+            border-radius: 20px;
+            resize: none;
+         }
+
+      }
+      input[type='submit'] {
+         display: inline-block;
+         padding: 1.25rem 2rem;
+         font-size: 1.6rem;
+         border-radius: 10px;
+         border: 1px solid #fff; 
+         background-color: transparent;
+         color: #fff;
+         transition: all .2s;
+
+         &:focus, 
+         &:active,
+         &:hover {
+            outline: none;
+            border: 1px solid $color-secondary-2;
+            color: $color-secondary-2;
+         }
+      }
+   }
+}

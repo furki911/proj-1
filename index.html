@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script src="js/slider.js" defer></script>
+      <script src="js/app.js" defer></script>
+      <script src="js/projectsGallery.js" defer></script>
+   </head>
+   <body>
+
+      <!-- Top Menu bar -->
+      <header class="header-top">
+         <div class="header-top__social-icons">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+         </div>
+         <div class="header-top__contact">            
+            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="header-top__title">abc@gmail.com</span></a>
+            <a href="#"><i class="fa fa-mobile" aria-hidden="true"></i><span class="header-top__title">+91 1234 567 890</span></a>
+            <i onclick="hideDiv()" class="cross fa fa-times-circle" aria-hidden="true"></i>
+         </div>
+      </header>
+
+
+      <!-- Main MenuBar -->
+      <header class="menubar">
+         <div class="container">
+            <figure class="menubar__logo">
+            </figure>
+            <ul class="menubar__ul">
+               <li class="menubar__list-item menubar__list-item--current"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+               <li class="menubar__list-item"><a href="#about"><i class="fa fa-user" aria-hidden="true"></i>About</a></li>
+               <li class="menubar__list-item"><a href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i>Catalogue</a></li>
+               <li class="menubar__list-item"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+               <li class="menubar__list-item"><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i>Services</a></li>
+            </ul>
+         </div>
+         <div class="hamburger__container"><div class="hamburger">&nbsp;</div></div>
+      </header>
+
+
+      <!-- Main Body Starts Here -->
+      <main class="main">
+
+         <!-- SLIDER -->
+         <!-- 
+         Please note, that you can apply .m--global-blending-active to .fnc-slider 
+         to enable blend-mode for all background-images or apply .m--blend-bg-active
+         to some specific slides (.fnc-slide). It's disabled by default in this demo,
+         because it requires specific images, where more than 50% of bg is transparent or monotone
+         -->
+         <div class="demo-cont">
+            <!-- slider start -->
+            <div class="fnc-slider example-slider">
+            <div class="fnc-slider__slides">
+               <!-- slide start -->
+               <div class="fnc-slide m--blend-green m--active-slide">
+                  <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                     <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                     <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                        <span>Black</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                        <span>Widow</span>
+                        </div>
+                     </h2>
+                     <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                     </button>
+                  </div>
+                  </div>
+               </div>
+               <!-- slide end -->
+               <!-- slide start -->
+               <div class="fnc-slide m--blend-dark">
+                  <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                     <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                     <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                        <span>Captain</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                        <span>America</span>
+                        </div>
+                     </h2>
+                     <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                     </button>
+                  </div>
+                  </div>
+               </div>
+               <!-- slide end -->
+               <!-- slide start -->
+               <div class="fnc-slide m--blend-red">
+                  <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                     <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                     <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                        <span>Iron</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                        <span>Man</span>
+                        </div>
+                     </h2>
+                     <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                     </button>
+                  </div>
+                  </div>
+               </div>
+               <!-- slide end -->
+               <!-- slide start -->
+               <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                  <div class="fnc-slide__mask">
+                     <div class="fnc-slide__mask-inner"></div>
+                  </div>
+                  <div class="fnc-slide__content">
+                     <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                        <span>Thor</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                        <span>Just Thor</span>
+                        </div>
+                     </h2>
+                     <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                     </button>
+                  </div>
+                  </div>
+               </div>
+               <!-- slide end -->
+            </div>
+            <nav class="fnc-nav">
+               <div class="fnc-nav__bgs">
+                  <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                  <div class="fnc-nav__bg m--navbg-dark"></div>
+                  <div class="fnc-nav__bg m--navbg-red"></div>
+                  <div class="fnc-nav__bg m--navbg-blue"></div>
+               </div>
+               <div class="fnc-nav__controls">
+                  <button class="fnc-nav__control">
+                  Black Widow
+                  <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                  Captain America
+                  <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                  Iron Man
+                  <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                  Thor
+                  <span class="fnc-nav__control-progress"></span>
+                  </button>
+               </div>
+            </nav>
+            </div>
+            <!-- slider end -->
+            <div class="demo-cont__credits">
+            <div class="demo-cont__credits-close"></div>
+            <h2 class="demo-cont__credits-heading">Made by</h2>
+            <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="demo-cont__credits-img" />
+            <h3 class="demo-cont__credits-name">Nikolay Talanov</h3>
+            <a href="https://codepen.io/suez/" target="_blank" class="demo-cont__credits-link">My codepen</a>
+            <a href="https://twitter.com/NikolayTalanov" target="_blank" class="demo-cont__credits-link">My twitter</a>
+            <h2 class="demo-cont__credits-heading">Based on</h2>
+            <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank" class="demo-cont__credits-link">Concept by Kreativa Studio</a>
+            <h4 class="demo-cont__credits-blend">Global Blend Mode</h4>
+            <div class="colorful-switch">
+               <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
+               <label class="colorful-switch__label" for="colorful-switch-cb">
+                  <span class="colorful-switch__bg"></span>
+                  <span class="colorful-switch__dot"></span>
+                  <span class="colorful-switch__on">
+                  <span class="colorful-switch__on__inner"></span>
+                  </span>
+                  <span class="colorful-switch__off"></span>
+               </label>
+            </div>
+            </div>
+         </div>
+
+
+         <!-- Section About Us -->
+         <section id="about" class="about container">
+            <h2 class="about__heading">About Us</h2>
+            <div class="about__content">
+               <figure class="about__image">
+                  <img src="images/profile.PNG" alt="img">
+               </figure>
+   
+               <div class="about__description">
+                  <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod fugit excepturi reiciendis officiis error ipsa, quisquam esse assumenda. Tenetur earum deserunt consequuntur, excepturi suscipit eligendi aut a nisi minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, autem! Commodi fugiat, quia deserunt, ab natus expedita culpa repudiandae vitae nostrum tenetur quam accusamus magni, optio quidem aliquid? Tenetur molestiae ipsa inventore provident corrupti, perferendis similique eveniet totam quis corporis? adipisicing elit. A animi, deserunt quasi voluptates pariatur ad qui vel earum similique quos libero commodi accusantium dolorum obcaecati possimus quae. Labore suscipit eos libero iste aut corrupti inventore rem deleniti consequuntur, eaque mollitia error quibusdam quis enim assumenda quos numquam similique culpa? Quisquam recusandae soluta tempore exercitationem inventore. Soluta inventore, consequuntur accusamus consectetur veritatis magni distinctio commodi modi suscipit eligendi asperiores temporibus culpa mollitia vero ducimus? Aut voluptate deserunt ratione cumque, tenetur aspernatur in aperiam laborum, obcaecati magnam eveniet, sed veniam debitis recusandae dignissimos totam. Reiciendis accusantium fuga odio maiores non quos culpa, praesentium officia omnis voluptas. Possimus repudiandae quod vitae, quaerat rem dolorem? Laborum vero quia qui, doloremque eligendi corrupti! Sed, quo animi?</p>
+               </div>
+            </div>
+         </section>
+
+
+
+         <!-- Section Project Gallery -->
+         <section class="section__gallery ">
+            <div class="slider__container">
+              <h2 class="gallery-heading">My Projects</h2>
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/id/756/300/200" alt="Lorem Picsum photo 1">
+                  <div class="gallery-item-text" data-url="https://picsum.photos/id/756/600/400">
+                     <p class="project__location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Project Location
+                     </p>
+                     <p class="project__post"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted By: NAME <br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted On: Date</p> 
+                        Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
+                </div>
+          
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/id/1015/300/200" alt="Lorem Picsum photo 2">
+                  <div class="gallery-item-text" data-url="https://picsum.photos/id/1015/600/400">
+                     <p class="project__location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Project Location
+                     </p>
+                     <p class="project__post"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted By: NAME <br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted On: Date</p> 
+                        Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
+                </div>
+          
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/id/1043/300/200" alt="Lorem Picsum photo 3">
+                  <div class="gallery-item-text" data-url="https://picsum.photos/id/1043/600/400">
+                     <p class="project__location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Project Location
+                     </p>
+                     <p class="project__post"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted By: NAME <br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted On: Date</p> 
+                        Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
+                </div>
+          
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/id/164/300/200" alt="Lorem Picsum photo 4">
+                  <div class="gallery-item-text" data-url="https://picsum.photos/id/164/600/400">
+                     <p class="project__location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Project Location
+                     </p>
+                     <p class="project__post"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted By: NAME <br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted On: Date</p> 
+                        Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
+                </div>
+          
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/id/385/300/200" alt="Lorem Picsum photo 5">
+                  <div class="gallery-item-text" data-url="https://picsum.photos/id/385/600/400">
+                     <p class="project__location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Project Location
+                     </p>
+                     <p class="project__post"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted By: NAME <br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted On: Date</p> 
+                        Project Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
+                </div>
+          
+                <div class="gallery-item">
+                  <img src="https://picsum.photos/id/392/300/200" alt="Lorem Picsum photo 6">
+                  <div class="gallery-item-text" data-url="https://picsum.photos/id/392/600/400">
+                     <p class="project__location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Project Location
+                     </p>
+                     <p class="project__post"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted By: NAME <br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Posted On: Date</p> 
+                        Project Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. A porro nulla deleniti earum velit eligendi culpa provident ex illo! Temporibus, totam obcaecati vel ducimus iusto dolore porro veniam, rerum laudantium dolor ad perspiciatis labore molestiae numquam unde suscipit at aliquid quo mollitia. Accusamus commodi magnam cumque temporibus ipsam minus libero.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <!-- Lightbox -->
+          <div class="lightbox preload">
+            <div class="lb-content">
+              <!-- You may put a loader gif or svg here for starters -->
+              <img class="lb-img" src="/img/loader.svg" alt="lightbox image">
+              <div class="lb-caption">
+                <h5 class="lb-url" href="" rel="noopener" target="_blank">Project Name</h5>
+                <div class="lb-text"></div>
+              </div>
+              <a href="#" class="close">&times;</a>
+            </div>
+          </div>
+
+
+
+          <!-- Section Photo Gallery -->
+          <h2 class="gallery__heading">Gallery</h2>
+          <section class="gallery">
+            <figure class="gallery__item gallery__item--1"><img src="images/gal-1.jpeg" alt="img-1" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--2"><img src="images/gal-2.jpeg" alt="img-2" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--3"><img src="images/gal-3.jpeg" alt="img-3" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--4"><img src="images/gal-4.jpeg" alt="img-4" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--5"><img src="images/gal-5.jpeg" alt="img-5" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--6"><img src="images/gal-6.jpeg" alt="img-6" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--7"><img src="images/gal-7.jpeg" alt="img-7" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--8"><img src="images/gal-8.jpeg" alt="img-8" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--9"><img src="images/gal-9.jpeg" alt="img-9" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--10"><img src="images/gal-10.jpeg" alt="img-10" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--11"><img src="images/gal-11.jpeg" alt="img-11" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--12"><img src="images/gal-12.jpeg" alt="img-12" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--13"><img src="images/gal-13.jpeg" alt="img-13" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--14"><img src="images/gal-14.jpeg" alt="img-14" class="gallery__img"></figure>
+        </section>
+
+
+        <h3 class="feedback__heading">Your Feedback</h3>
+        <section class="feedback">
+           <div class="carousel__container">
+               <div class="feedback__carousel">
+                  <div data-card='4' class="card">
+                     <div class="image">
+                        <img src="images/gal-1.jpeg" alt="img-1">
+                     </div>
+                     <div class="detail">
+                        <h5>Project 1</h5>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <p>Project 1 was the awesome project by me</p>
+                     </div>
+                     <div class="next">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                     </div>
+                  </div>
+
+                  <div data-card='3' class="card">
+                     <div class="image">
+                        <img src="images/gal-2.jpeg" alt="img-1">
+                     </div>
+                     <div class="detail">
+                        <h5>Project 2</h5>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden=s"true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <p>Project 2 was the awesome project by me</p>
+                     </div>
+                     <div class="next">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                     </div>
+                  </div>
+
+                  <div data-card='2' class="card">
+                     <div class="image">
+                        <img src="images/gal-3.jpeg" alt="img-1">
+                     </div>
+                     <div class="detail">
+                        <h5>Project 3</h5>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <p>Project 3 was the awesome project by me</p>
+                     </div>
+                     <div class="next">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                     </div>
+                  </div>
+
+                  <div data-card='1' class="card">
+                     <div class="image">
+                        <img src="images/gal-4.jpeg" alt="img-1">
+                     </div>
+                     <div class="detail">
+                        <h5>Project 4</h5>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <p>Project 4 was the awesome project by me</p>
+                     </div>
+                     <div class="next">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+           </div>
+            
+
+           <form action="#" class="feedback__form">
+              <h3 class="feedback__form-heading">Get in Touch</h3>
+              <div class="feedback__form-group">
+                 <input type="text" placeholder="Name">
+              </div>
+               <div class="feedback__form-group">
+                  <input type="email" placeholder="Email">
+               </div>
+               <div class="feedback__form-group">
+                  <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+               </div>
+               <input type="submit" value="submit &rarr;">
+            </form>
+        </section>
+      </main>
+
+      <footer>
+         <div class="container footer">
+            <div class="footer__quick-links">
+               <h6 class="quicklinks__header">Quick Links</h6>
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Reach</a></li>
+                  <li><a href="#">F.A.Q</a></li>
+               </ul>
+            </div>
+            <div class="footer__address">
+               <h6 class="quicklinks__header">Address</h6>
+               <p>123, Main Building</p>
+               <p>London, 123456 UK</p>
+            </div>
+            <div class="footer__contact">
+               <h6 class="quicklinks__header">Contact Us</h6>
+               <p>+12 34567 89012</p>
+               <p>+12 34567 89012</p>
+            </div>
+            <div class="footer__social">
+               <h6 class="quicklinks__header">&nbsp;</h6>
+               <i class="fa fa-facebook" aria-hidden="true"></i>
+               <i class="fa fa-twitter" aria-hidden="true"></i>
+               <i class="fa fa-instagram" aria-hidden="true"></i>
+               <i class="fa fa-linkedin" aria-hidden="true"></i>
+               <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+         </div>
+      </footer>
+
+   
+   
+   </body>
+
+   <script>
+   </script>
+
+</html>
